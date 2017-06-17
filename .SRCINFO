@@ -1,0 +1,27 @@
+pkgbase = libdrm-amd
+	pkgdesc = Userspace interface to kernel DRM services, AMD hybrid version
+	pkgver = 2.4.14.r1612.g1fe5f0fe
+	pkgrel = 1
+	url = http://people.freedesktop.org/~agd5f
+	arch = i686
+	arch = x86_64
+	license = custom
+	checkdepends = cairo
+	makedepends = valgrind
+	makedepends = xorg-util-macros
+	makedepends = libxslt
+	makedepends = docbook-xsl
+	depends = libpciaccess
+	depends = linux-amd
+	provides = libdrm
+	conflicts = libdrm
+	replaces = libdrm-new
+	replaces = libdrm-nouveau
+	replaces = libdrm
+	source = libdrm::git://people.freedesktop.org/~agd5f/drm#branch=amd-mainline-hybrid-master20170517
+	source = COPYING
+	sha512sums = SKIP
+	sha512sums = b0ca349b882a4326b19f81f22804fabdb6fb7aef31cdc7b16b0a7ae191bfbb50c7daddb2fc4e6c33f1136af06d060a273de36f6f3412ea326f16fa4309fda660
+
+pkgname = libdrm-amd
+
