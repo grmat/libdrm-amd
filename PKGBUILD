@@ -2,13 +2,13 @@
 
 pkgname=libdrm-amd
 _pkgname=libdrm
-pkgver=2.4.14.r1612.g1fe5f0fe
+pkgver=2.4.80.r70.gf524bb93
 pkgrel=1
 pkgdesc="Userspace interface to kernel DRM services, AMD hybrid version"
 arch=(i686 x86_64)
 license=('custom')
-depends=('libpciaccess' 'linux-amd')
-makedepends=('valgrind' 'xorg-util-macros' 'libxslt' 'docbook-xsl')
+depends=('libpciaccess' 'linux-amd-mainline-git')
+makedepends=('valgrind' 'xorg-util-macros' 'libxslt' 'docbook-xsl' 'autoconf')
 checkdepends=('cairo')
 provides=('libdrm')
 conflicts=('libdrm')
